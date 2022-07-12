@@ -1,0 +1,110 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photo editoe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="img">
+            <div class="img_box" >
+                <img src="" id="img">
+                <canvas id="canvas"></canvas>
+
+            </div>
+
+        <div class="upload">
+            <label for="upload_input">upload</label>
+            <input type="file"  id="upload_input"></input>
+        </div>
+
+
+
+
+
+
+        </div>
+
+
+
+
+        <div class="filters">
+
+            <ul>
+                <!-- ==========start filter 1 ============== -->
+                <li>
+                    <label for="saturate" dir="rtl">saturate</label>
+                    <input type="range" id="saturate" min="0" max="200" value="100" dir="rtl">
+                </li>
+                <!-- ==========end filter 1 ============== -->
+
+                <!-- ==========start filter 2 ============== -->
+                <li>
+                    <label for="contrast" dir="rtl">contrast</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100" dir="rtl">
+                </li>
+                <!-- ==========end filter 2 ============== -->
+
+                <!-- ==========start filter 3 ============== -->
+                <li>
+                    <label for="brightness" dir="rtl">brightness</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100" dir="rtl">
+                </li>
+                <!-- ==========end filter 3 ============== -->
+
+                <!-- ==========start filter 4 ============== -->
+                <li>
+                    <label for="sepia" dir="rtl">sepia</label>
+                    <input type="range" id="sepia" min="0" max="200" value="0" dir="rtl">
+                </li>
+                <!-- ==========end filter 4 ============== -->
+
+                <!-- ==========start filter 5 ============== -->
+                <li>
+                    <label for="grayscale" dir="rtl">grayscale</label>
+                    <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0" dir="rtl">
+                </li>
+                <!-- ==========end filter 5 ============== -->
+
+                
+                <!-- ==========start filter 6 ============== -->
+                <li>
+                    <label for="blur" dir="rtl">blur</label>
+                    <input type="range" id="blur" step="0.1" min="0" max="10" value="0" dir="rtl">
+                </li>
+                <!-- ==========end filter 6 ============== -->
+                
+                <!-- ==========start filter 7 ============== -->
+                <li>
+                    <label for="hue-rotate" dir="rtl">hue-rotate</label>
+                    <input type="range" id="hue-rotate"  min="0" max="350" value="0" dir="rtl">
+                </li>
+                <!-- ==========end filter 7 ============== -->
+
+
+                <li>
+                    <a download="image" id="download">download</a>
+                    <span id="rest" onClick="restValue()">
+                        rest
+                    </span>
+                </li>
+                
+ 
+
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
